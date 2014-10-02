@@ -35,7 +35,6 @@ public class Team {
 			g.setColor(Color.yellow);
 			g.drawString(String.format("%f", results.get(testFileName)), r.x, r.y + r.height - 2);
 		}
-		
 	}
 	
 	public Double getRank(String testFileName){

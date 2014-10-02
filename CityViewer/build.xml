@@ -33,6 +33,22 @@
 			</manifest>
 		</jar>
 	</target>
+	
+	<target name="orderedjar" depends="compile">
+			<jar destfile="${project.home}/OrderedTraveler.jar" baseDir="${project.home}/bin">
+				<manifest>
+					<attribute name="Main-Class" value="hps.nyu.fa14.OrderedTraveler" />
+				</manifest>
+			</jar>
+		</target>
+	
+	<target name="greedyjar" depends="compile">
+				<jar destfile="${project.home}/GreedyTraveler.jar" baseDir="${project.home}/bin">
+					<manifest>
+						<attribute name="Main-Class" value="hps.nyu.fa14.GreedyTraveler" />
+					</manifest>
+				</jar>
+			</target>
 
 	<target name="evaluatorjar" depends="compile">
 		<jar destfile="${project.home}/tsp.jar" baseDir="${project.home}/bin">
